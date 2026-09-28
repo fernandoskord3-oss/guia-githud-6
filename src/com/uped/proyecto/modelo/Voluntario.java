@@ -18,4 +18,11 @@ public class Voluntario extends Persona {
     public String toString() {
         return presentarse() + " | Horas: " + horasServicio;
     }
+    @Override
+    public String describirActividad() {
+        return nombre + " acumula " + horasServicio + " horas de servicio";
+    }
 }
+
+
+

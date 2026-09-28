@@ -12,4 +12,10 @@ public class Empleado extends Persona {
     public double calcularBeneficioAnual() {
         return salario * 0.10; // 10% de bono
     }
+
+    @Override
+    public String describirActividad() {
+        return nombre + " trabaja con un salario de $" + salario;
+    }
 }
+

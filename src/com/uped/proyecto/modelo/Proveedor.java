@@ -17,6 +17,11 @@ public class Proveedor extends Persona {
     public String toString() {
         return presentarse();
     }
+    @Override
+    public String describirActividad() {
+        return nombre + " facturó $" + montoFacturado + " en el año";
+    }
 }
+
 
 

@@ -15,4 +15,8 @@ public class Cliente extends Persona {
     public double calcularBeneficioAnual() {
         return comprasAnuales * 0.05; // 5% de fidelidad
     }
+    @Override
+    public String describirActividad() {
+        return nombre + " realizó compras por $" + comprasAnuales + " este año";
+    }
 }

@@ -25,4 +25,9 @@ public class Docente extends Persona {
         return presentarse() + " | " + especialidad
                 + " (" + aniosExperiencia + " años)";
     }
+    @Override
+    public String describirActividad() {
+        return nombre + " imparte " + especialidad + " con " + aniosExperiencia + " años de experiencia";
+    }
 }
+

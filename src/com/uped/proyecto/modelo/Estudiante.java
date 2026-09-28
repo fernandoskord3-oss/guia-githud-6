@@ -17,4 +17,9 @@ public class Estudiante extends Persona {
     public double calcularBeneficioAnual() {
         return promedio >= 8.5 ? 500.0 : 0.0; // beca
     }
+    @Override
+    public String describirActividad() {
+        return nombre + " cursa " + carrera + " con promedio " + promedio;
+    }
 }
+
